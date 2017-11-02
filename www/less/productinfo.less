@@ -1,3 +1,4 @@
+//main: style.less
 main.prodinfo {
 
 
@@ -81,11 +82,13 @@ main.prodinfo {
     .addtocart {
         width: 50%;
         height: 30px;
-        background-color: blue;
-        color: @white;
+        background-color: @blue;
         margin-top: 50px;
         border-radius: 10px;
-        box-shadow: 3px lighten(blue, 10%)
+        box-shadow: 3px lighten(@blue, 10%);
+        span {
+            color: white;
+        }
     }
 
     .lower {

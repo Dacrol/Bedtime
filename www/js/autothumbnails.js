@@ -1,30 +1,29 @@
 const id_selector = "#product-cards";
 
-$(document).ready(function() {
+$(document).ready(function () {
     renderThumbs();
 });
 
 function renderThumbs(article) {
-    $.getJSON("/json/products.json", function(json) {
+    $.getJSON("/json/products.json", function (json) {
         renderInfo(json);
     });
-}
+};
 
 function renderInfo(data) {
-    for (let item in data) {
-        let val = data[item];
+    $.each(data, function () {
         $(id_selector).append(
-            '<a href="/product/' + item + '" class="news">' +
+            '<a href="/product/' + this.Detaljer.Artikelkod + '" class="news">' +
             '<article>' +
             '<div class="img-wrapper">' +
-            '<img src="' + val["Bild"] + '" class="thumbnail" alt="' + val["Namn"] + '">' +
+            '<img src="' + this.Bild + '" class="thumbnail" alt="' + this.Namn + '">' +
             '</div>' +
             '<div class="info">' +
-            '<h3>' + val["Namn"] + '</h3>' +
-            '<p>' + val["Beskrivning1"] + '</p>' +
+            '<h3>' + this.Namn + '</h3>' +
+            '<p>' + this.Beskrivning1 + '</p>' +
             '</div>' +
             '</article>' +
             '</a>'
         );
-    }
-}
+    });
+};

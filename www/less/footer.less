@@ -1,3 +1,4 @@
+//main: style.less
 .float>* {
     float: left;
 }
@@ -10,7 +11,7 @@ footer {
 
         div.footer-block {
             text-align: center;
-            padding-top: 10px; //background-color: grey;
+            padding-top: 10px;
             width: 100%; // Landscape phones & portrait tablets
             @media screen and (min-width: @xs) and (orientation: landscape), screen and (min-width: @sm) {
                 width: 50%;
@@ -25,12 +26,14 @@ footer {
                 text-align: left;
 
                 h3 {
+                    color: white;
                     font-size: 20px;
                     font-weight: bold;
                     margin-bottom: 10px;
                 }
 
                 p {
+                    color: white;
                     line-height: 80%;
 
                     &:last-child {

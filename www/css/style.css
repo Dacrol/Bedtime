@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700, 600');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -220,6 +221,7 @@ label,
 td,
 tr,
 span {
+  color: black;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
@@ -229,6 +231,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: black;
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
 }
@@ -290,6 +293,7 @@ header section.hamburger {
   }
 }
 main {
+  color: black;
   margin-right: auto;
   margin-left: auto;
   width: 100%;
@@ -316,6 +320,15 @@ main {
 }
 main img {
   width: 100%;
+}
+main.butiker iframe {
+  width: 100%;
+  height: 600px;
+}
+@media screen and (max-width: 767px) {
+  main.butiker iframe {
+    height: 400px;
+  }
 }
 .slider {
   overflow: hidden;
@@ -398,10 +411,8 @@ main img {
 }
 .news-col a.news .info h3 {
   text-transform: uppercase;
-  color: black;
 }
 .news-col a.news .info p {
-  color: black;
   line-height: 1.2em;
 }
 main.prodinfo article.flex-container {
@@ -483,14 +494,16 @@ main.prodinfo article section h2 {
 main.prodinfo .addtocart {
   width: 50%;
   height: 30px;
-  background-color: blue;
-  color: #ffffff;
+  background-color: #67a1ff;
   margin-top: 50px;
   border-radius: 10px;
-  box-shadow: 3px #3333ff;
+  box-shadow: 3px #9ac1ff;
+}
+main.prodinfo .addtocart span {
+  color: white;
 }
 main.prodinfo .lower {
-  border: 1px solid #000000;
+  border: 1px solid #000;
   background-color: lightgrey;
   width: 100%;
 }
@@ -545,10 +558,8 @@ main.prodinfo tr:nth-child(odd) {
 }
 .offers-col a.offer .info h3 {
   text-transform: uppercase;
-  color: black;
 }
 .offers-col a.offer .info p {
-  color: black;
   line-height: 1.2em;
 }
 h1.contact-rubrik {
@@ -704,11 +715,13 @@ footer section.footer-container div.footer-block div.footer-text {
   text-align: left;
 }
 footer section.footer-container div.footer-block div.footer-text h3 {
+  color: white;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 footer section.footer-container div.footer-block div.footer-text p {
+  color: white;
   line-height: 80%;
 }
 footer section.footer-container div.footer-block div.footer-text p:last-child {
@@ -731,7 +744,7 @@ footer section.footer-container div.footer-block div.footer-text li {
   list-style-type: none;
   float: left;
 }
-footer section.footer-container div.footer-block div.footer-text li:not(&:last-child) {
+footer section.footer-container div.footer-block div.footer-text li:not(footer section.footer-container div.footer-block div.footer-text li:last-child) {
   margin: left;
 }
 footer section.footer-container div.footer-block div.footer-text li:last-child a {
@@ -739,8 +752,4 @@ footer section.footer-container div.footer-block div.footer-text li:last-child a
 }
 footer section.footer-container div.footer-block div.footer-text li i.fa-2x {
   padding-right: 10px;
-}
-main.butiker iframe {
-  width: 100%;
-  height: 500px;
 }

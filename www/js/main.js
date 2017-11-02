@@ -1,6 +1,6 @@
 // console.log("test");
 $(document).ready(function () {
-  if($('.slider')){
+  if($('.slider').length){
     $('.slider').slick({
       centerMode: false,
       slidesToShow: 1,
@@ -12,16 +12,10 @@ $(document).ready(function () {
       autoplay: true,
       autoplaySpeed: 5000,
     });   
-  }
-
-
-
-
-
+  };
   $(".hamburgerToggle").click(function () {
     $(".smallMenu").toggle();
   });
-
   $(window).resize(function () {
     if ($(document).width() > 720 && $(".smallMenu").is(":visible")) {
       $(".smallMenu").hide();
