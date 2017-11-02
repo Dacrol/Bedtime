@@ -1,0 +1,73 @@
+//main: style.less
+// HEADER
+.headermargin {
+    margin: 10px 0 10px 0px;
+}
+
+header {
+
+    .container {
+        @media screen and (max-width: @sm) {
+            padding: 0 20px;
+        }
+
+        h1 {
+            a {
+                font-family: 'Dancing Script', cursive;
+                color: @blue;
+            }
+        }
+
+        a {
+            font-family: @montserrat;
+        }
+    }
+
+    section {
+        font-size: 20px; //headern
+        h1 {
+
+            font-size: 60px;
+            .headermargin;
+        }
+        &.largeMenu {
+            ul {
+
+                .headermargin;
+                text-align: left;
+            }
+            ul li {
+                display: inline-block;
+                padding-right: 20px;
+            }
+            @media screen and (max-width: @sm) {
+                display: none;
+            }
+        }
+        &.smallMenu {
+
+            display: none;
+            a {
+
+                margin: 10px 0 10px 30px;
+
+                text-decoration: none;
+            }
+            ul {
+
+                @media screen and (min-width: @sm) {
+                    display:none;
+                }
+            }
+        }
+        &.hamburger {
+            cursor: pointer;
+            display: none;
+
+            .headermargin;
+            @media screen and (max-width: @sm) {
+                display: block;
+            }
+        }
+    }
+}

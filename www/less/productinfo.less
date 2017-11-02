@@ -1,0 +1,105 @@
+main.prodinfo {
+
+
+    article.flex-container {
+        display: block;
+        @media (min-width: @md) {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        } //end @media
+        section.left {
+            display: block;
+            padding: 10px;
+            width: 100%;
+            margin-top: 15px;
+            margin-right: 15px;
+            @media (min-width: @md) {
+                align-items: flex-start;
+                width: 49%;
+                margin-right: 2px;
+            } //end @media       
+        } //END SECTION LEFT
+        section.right {
+            display: block;
+            padding: 10px;
+            margin-top: 15px;
+            @media (min-width: @md) {
+                align-items: flex-start;
+                width: 49%;
+                margin-left: 2px;
+            }
+            form {
+                .formfloat {
+                    float: left;
+                    width: 40%;
+                    label {
+                        width: 100%;
+                    } //end label
+                } //end formfloat
+                //CLEARFIX
+                &.clear {
+                    content: "";
+                    display: table;
+                    clear: both;
+                } //end clearfix
+            } //end form
+            .bedsize {
+                margin-left: 5px;
+                margin-bottom: 10px;
+                margin-top: 5px;
+            } //end .bedtime
+        } //END SECTION RIGHT
+    }
+
+    article {
+        .table {
+            width: 100%;
+            border: 1px solid #000;
+
+            section p {
+                padding: 5px;
+                margin-top: 5px;
+            } //end section p    
+        } //end .table
+        .tdspacing {
+            margin-left: 10px;
+            padding: 3px 10px 5px 3px;
+            font-weight: bold;
+        } //end .tdspacing
+        .td {
+            margin-left: 10px;
+            padding: 3px 10px 5px 3px;
+        } //end .tdspacing
+        section h2 {
+            line-height: 1;
+            text-align: left;
+            text-transform: none;
+            margin-bottom: 5px;
+        } //end section h2     
+    } //end article
+    .addtocart {
+        width: 50%;
+        height: 30px;
+        background-color: blue;
+        color: @white;
+        margin-top: 50px;
+        border-radius: 10px;
+        box-shadow: 3px lighten(blue, 10%)
+    }
+
+    .lower {
+        border: 1px solid @black;
+        background-color: lightgrey;
+        width: 100%;
+    } //END SECTION LOWER
+    //CLEARFIX
+    .clear {
+        content: "";
+        display: table;
+        clear: both;
+    } //end clearfix
+    tr:nth-child(odd) {
+        background-color: @lightgrey;
+    }
+} // END MAIN

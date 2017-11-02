@@ -1,0 +1,63 @@
+// KONTAKT SIDAN
+h1.contact-rubrik {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.employees-container {
+    .clearFix;
+    .employee {
+        .grid-item;
+        width: 31.33%;
+        height: 550px;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        .employee-body {
+            padding-top: 20px;
+        }
+        @media screen and (max-width:@md) {
+            height: 460px;
+        }
+        @media screen and (max-width:@sm) {
+            width: 100%;
+            height: auto;
+            -webkit-column-count: 2;
+            /* Chrome, Safari, Opera */
+            -moz-column-count: 2;
+            /* Firefox */
+            column-count: 2;
+        }
+    }
+}
+
+.contact-container {
+    .clearFix;
+    @media screen and (max-width: @sm) {
+        padding-left: 10px;
+    }
+    margin-top: 20px;
+    .contact-text {
+        h2 {
+            margin-bottom: 10px;
+        }
+        .grid-item;
+        width: 31.33%;
+        @media screen and (max-width:@md) {
+            width: 25%;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width:@sm) {
+            width: 100%;
+        }
+    }
+    iframe {
+        width: auto;
+        @media screen and (max-width: @md) {
+            width: 100%;
+        }
+        @media screen and (max-width:@sm) {
+            width: 80%;
+        }
+    }
+}

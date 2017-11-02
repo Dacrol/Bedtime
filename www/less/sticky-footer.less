@@ -1,0 +1,28 @@
+// STICKY FOOTER
+html {
+    position: relative;
+    min-height: 100%;
+    body {
+        margin-bottom: @footer-height-mobile + 50px; // fixed height + extra px for space before footer
+        @media screen and (min-width: @xs) {
+            margin-bottom: @footer-height-tablet + 50px;
+        }
+        @media screen and (min-width: @md) {
+            margin-bottom: @footer-height-pc + 50px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: @col-padding;
+            height: @footer-height-mobile; //fixed height 
+            @media screen and (min-width: @xs) {
+                height: @footer-height-tablet;
+            }
+            @media screen and (min-width: @md) {
+                height: @footer-height-pc;
+            }
+        }
+    }
+}

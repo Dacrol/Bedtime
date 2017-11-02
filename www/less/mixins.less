@@ -1,0 +1,42 @@
+// ALL THE MIXINS
+//MEDIA QUERY FOR MAIN CONTAINER
+// AND CENTER THE MAIN CONTAINER
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    @media (min-width: @xs) {
+        max-width: 540px;
+    }
+    @media (min-width: @sm) {
+        max-width: 720px;
+    }
+    @media (min-width: @md) {
+        max-width: 960px;
+    }
+    @media (min-width: @lg) {
+        max-width: 1140px;
+    }
+}
+
+
+//CLEARFIX
+//SET ON THE PARENT OF THE FLOATING COLUMNS
+.clearFix {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+.grid-item {
+    float: left;
+    margin: 1%;
+    position: relative;
+    overflow: hidden;
+}

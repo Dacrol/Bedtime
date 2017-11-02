@@ -1,0 +1,35 @@
+.slider {
+    overflow: hidden;
+    position: relative;
+
+    .slick-slide {
+        height: 100%;
+        display: inline-block;
+    }
+
+    .slick-prev {
+        left: 25px;
+        z-index: 1;
+    }
+    .slick-next {
+        right: 25px;
+        z-index: 1;
+    }
+    .slick-track {
+        height: 200px;
+
+        @media screen and (min-width: @sm) {
+            height: 230px;
+        }
+        @media screen and (min-width: @md) {
+            height: 300px;
+        }
+        @media screen and (min-width: @lg) {
+            height: 450px;
+        }
+        img {
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}
