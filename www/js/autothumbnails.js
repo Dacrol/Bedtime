@@ -6,12 +6,12 @@ $(document).ready(function () {
 
 function renderThumbs(article) {
     $.getJSON("/json/products.json", function (json) {
-        renderInfo(json);
+        renderInfo(json, 3);
     });
 };
 
-function renderInfo(data) {
-    $.each(data, function () {
+function renderInfo(data, max) {
+    $.each(data, function (i) {
         $(id_selector).append(
             '<a href="/product/' + this.Detaljer.Artikelkod + '" class="news">' +
             '<article>' +
@@ -25,5 +25,8 @@ function renderInfo(data) {
             '</article>' +
             '</a>'
         );
+        if (max != 0){
+            return i<max;
+        }
     });
 };

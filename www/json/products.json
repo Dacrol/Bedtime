@@ -17,15 +17,16 @@
     "Färg": "Beige",
     "Modell": "Midnatt",
     "Fasthet/komfort": "Medium",
-    "Leverantörsfärg": "Beige"
+    "Leverantörsfärg": "Beige",
+    "Pris": "9999 kr"
   },
   "Bild": "/productinfo/img/midnatt-24sju-kontinentalsang-2.png"
   },
   "2": {
     "Namn": "24SJU Dagsljus Kontinentalsäng",
-    "Beskrivning1": "Om du väljer Midnatt kontinental får du femzonsfjädring i en hel kassett och en hög underbädd utrustad med avlastande pocketfjädring. En svensktillverkad och mycket prisvärd säng.",
+    "Beskrivning1": "Om du väljer Dagsljus kontinental får du femzonsfjädring i en hel kassett och en hög underbädd utrustad med avlastande pocketfjädring. En svensktillverkad och mycket prisvärd säng.",
     "Leveranstid": "9 veckor",
-    "Beskrivning2": "24SJUs kontinentala Dagsljus. Den är byggd med pocketfjädring i både underbädd och plymå vilket resulterar i en ännu mer utökad komfort och följsamhet. Plymån hos Midnatt består av en hel kassett. Fjädrarna är indelade i fem fasthetszoner som ger gott stöd för axlar, höfter och midja/rygg. Zonindelningen ger en behaglig, välbalanserad komfortyta. Midnatt tillverkas i Sverige. Du kan välja mellan fyra olikfärgade tyger till din Midnatt – välj den färg du gillar bäst.",
+    "Beskrivning2": "24SJUs kontinentala Dagsljus. Den är byggd med pocketfjädring i både underbädd och plymå vilket resulterar i en ännu mer utökad komfort och följsamhet. Plymån hos Dagsljus består av en hel kassett. Fjädrarna är indelade i fem fasthetszoner som ger gott stöd för axlar, höfter och midja/rygg. Zonindelningen ger en behaglig, välbalanserad komfortyta. Dagsljus tillverkas i Sverige. Du kan välja mellan fyra olikfärgade tyger till din Dagsljus – välj den färg du gillar bäst.",
     "Detaljer": {
     "Artikelkod": "2",
     "Fasthetsgrad": "medium, medium/fast, fast",
@@ -37,17 +38,18 @@
     "Stoppningsmaterial": "Polyeterskum 20 mm, 23 kg/90 Nm",
     "Storlek": "210x200",
     "Färg": "Beige",
-    "Modell": "Midnatt",
+    "Modell": "Dagsljus",
     "Fasthet/komfort": "Medium",
-    "Leverantörsfärg": "Beige"
+    "Leverantörsfärg": "Beige",
+    "Pris": "9999 kr"
   },
   "Bild": "/productinfo/img/midnatt-24sju-kontinentalsang-3.png"
   },
   "3": {
     "Namn": "24SJU Morgonstund",
-    "Beskrivning1": "Om du väljer Midnatt kontinental får du femzonsfjädring i en hel kassett och en hög underbädd utrustad med avlastande pocketfjädring. En svensktillverkad och mycket prisvärd säng.",
+    "Beskrivning1": "Om du väljer Morgonstund kontinental får du femzonsfjädring i en hel kassett och en hög underbädd utrustad med avlastande pocketfjädring. En svensktillverkad och mycket prisvärd säng.",
     "Leveranstid": "9 veckor",
-    "Beskrivning2": "24SJUs Morgonstund. Den är byggd med pocketfjädring i både underbädd och plymå vilket resulterar i en ännu mer utökad komfort och följsamhet. Plymån hos Midnatt består av en hel kassett. Fjädrarna är indelade i fem fasthetszoner som ger gott stöd för axlar, höfter och midja/rygg. Zonindelningen ger en behaglig, välbalanserad komfortyta. Midnatt tillverkas i Sverige. Du kan välja mellan fyra olikfärgade tyger till din Midnatt – välj den färg du gillar bäst.",
+    "Beskrivning2": "24SJUs Morgonstund. Den är byggd med pocketfjädring i både underbädd och plymå vilket resulterar i en ännu mer utökad komfort och följsamhet. Plymån hos Morgonstund består av en hel kassett. Fjädrarna är indelade i fem fasthetszoner som ger gott stöd för axlar, höfter och midja/rygg. Zonindelningen ger en behaglig, välbalanserad komfortyta. Morgonstund tillverkas i Sverige. Du kan välja mellan fyra olikfärgade tyger till din Morgonstund – välj den färg du gillar bäst.",
     "Detaljer": {
     "Artikelkod": "3",
     "Fasthetsgrad": "medium, medium/fast, fast",
@@ -59,10 +61,34 @@
     "Stoppningsmaterial": "Polyeterskum 20 mm, 23 kg/90 Nm",
     "Storlek": "210x200",
     "Färg": "Beige",
-    "Modell": "Midnatt",
+    "Modell": "Morgonstund",
     "Fasthet/komfort": "Medium",
-    "Leverantörsfärg": "Beige"
+    "Leverantörsfärg": "Beige",
+    "Pris": "9999 kr"
   },
   "Bild": "/productinfo/img/midnatt-24sju-kontinentalsang-180x200-ljusgra-medium.png"
+  },
+  "4": {
+    "Namn": "24SJU Gryning",
+    "Beskrivning1": "Om du väljer Gryning kontinental får du femzonsfjädring i en hel kassett och en hög underbädd utrustad med avlastande pocketfjädring. En svensktillverkad och mycket prisvärd säng.",
+    "Leveranstid": "9 veckor",
+    "Beskrivning2": "24SJUs Gryning. Den är byggd med pocketfjädring i både underbädd och plymå vilket resulterar i en ännu mer utökad komfort och följsamhet. Plymån hos Gryning består av en hel kassett. Fjädrarna är indelade i fem fasthetszoner som ger gott stöd för axlar, höfter och midja/rygg. Zonindelningen ger en behaglig, välbalanserad komfortyta. Gryning tillverkas i Sverige. Du kan välja mellan fyra olikfärgade tyger till din Gryning – välj den färg du gillar bäst.",
+    "Detaljer": {
+    "Artikelkod": "3",
+    "Fasthetsgrad": "medium, medium/fast, fast",
+    "Fjäderhöjd": "15 cm + 13 cm",
+    "Fjädring": "Pocket 5-zon, pocket",
+    "Garanti": "20 års garanti mot ram- och fjäderbrott",
+    "Tillverkningsland": "Sverige",
+    "Rekommenderad": "bäddmadrass BM3",
+    "Stoppningsmaterial": "Polyeterskum 20 mm, 23 kg/90 Nm",
+    "Storlek": "210x200",
+    "Färg": "Beige",
+    "Modell": "Gryning",
+    "Fasthet/komfort": "Medium",
+    "Leverantörsfärg": "Beige",
+    "Pris": "Just nu 8999 kr!"
+  },
+  "Bild": "/imgs/sang3rea.jpg"
   }
 }
