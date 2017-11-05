@@ -525,13 +525,14 @@ main.prodinfo .addtocart {
   background-color: #67a1ff;
   margin-top: 50px;
   border-radius: 10px;
-  box-shadow: 3px #9ac1ff;
+  box-shadow: 3px 3px 4px #9ac1ff;
+  border-width: 0;
 }
 main.prodinfo .addtocart span {
   color: white;
 }
 main.prodinfo .lower {
-  border: 1px solid #000000;
+  border: 1px solid #000;
   background-color: lightgrey;
   width: 100%;
 }
@@ -801,9 +802,6 @@ footer section.footer-container div.footer-block div.footer-text ul {
 footer section.footer-container div.footer-block div.footer-text li {
   list-style-type: none;
   float: left;
-}
-footer section.footer-container div.footer-block div.footer-text li:not(&:last-child) {
-  margin: left;
 }
 footer section.footer-container div.footer-block div.footer-text li:last-child a {
   margin-bottom: 30px;
