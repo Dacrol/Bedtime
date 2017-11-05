@@ -5,7 +5,7 @@ html {
     min-height: 100%;
     body {
         margin-bottom: @footer-height-mobile + 50px; // fixed height + extra px for space before footer
-        @media screen and (min-width: @xs) {
+        @media screen and (min-width: @sm) {
             margin-bottom: @footer-height-tablet + 50px;
         }
         @media screen and (min-width: @md) {
@@ -18,7 +18,7 @@ html {
             width: 100%;
             padding: @col-padding;
             height: @footer-height-mobile; //fixed height 
-            @media screen and (min-width: @xs) {
+            @media screen and (min-width: @sm) {
                 height: @footer-height-tablet;
             }
             @media screen and (min-width: @md) {

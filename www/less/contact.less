@@ -3,11 +3,19 @@
 h1.contact-rubrik {
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .employees-container {
     .clearFix;
     .employee {
+
+        img {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 80%;
+        }
+
         .grid-item;
         width: 31.33%;
         height: 550px;
@@ -16,6 +24,37 @@ h1.contact-rubrik {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         .employee-body {
             padding-top: 20px;
+
+            h2 {
+                margin-bottom: 7px;
+            }
+
+            p {
+                font-size: 14px;
+                width: 90%;
+                margin: auto;
+            }
+
+            i {
+                font-size: 14px;
+                text-align: left;
+
+            }
+
+            ul {
+                margin-top: 10px;
+            }
+
+            a {
+                font-family: @montserrat;
+                font-size: 14px;
+            }
+
+            span {
+                font-family: @montserrat;
+                margin-left: 3px;
+            }
+
         }
         @media screen and (max-width:@md) {
             height: 460px;
@@ -23,11 +62,11 @@ h1.contact-rubrik {
         @media screen and (max-width:@sm) {
             width: 100%;
             height: auto;
-            -webkit-column-count: 2;
-            /* Chrome, Safari, Opera */
-            -moz-column-count: 2;
-            /* Firefox */
-            column-count: 2;
+            // -webkit-column-count: 2;
+            // /* Chrome, Safari, Opera */
+            // -moz-column-count: 2;
+            // /* Firefox */
+            // column-count: 2;
         }
     }
 }
@@ -37,6 +76,15 @@ h1.contact-rubrik {
     @media screen and (max-width: @sm) {
         padding-left: 10px;
     }
+
+    ul {
+        li {
+            font-family: @montserrat;
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
+
     margin-top: 20px;
     .contact-text {
         h2 {

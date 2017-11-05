@@ -3,6 +3,9 @@ main.prodinfo {
 
 
     article.flex-container {
+        p {
+            line-height: 1.4em;
+        }
         display: block;
         @media (min-width: @md) {
             display:flex;
@@ -30,12 +33,17 @@ main.prodinfo {
                 width: 49%;
                 margin-left: 2px;
             }
+
             form {
                 .formfloat {
                     float: left;
                     width: 40%;
                     label {
                         width: 100%;
+
+                        input {
+                            margin-right: 5px;
+                        }
                     } //end label
                 } //end formfloat
                 //CLEARFIX
@@ -66,7 +74,8 @@ main.prodinfo {
         .tdspacing {
             margin-left: 10px;
             padding: 3px 10px 5px 3px;
-            font-weight: bold;
+            font-weight: 500;
+            line-height: 1.1;
         } //end .tdspacing
         .td {
             margin-left: 10px;

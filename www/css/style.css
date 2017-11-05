@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700, 600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400, 700, 600');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+.headermargin {
+  margin: 10px 0 10px 0px;
+}
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -25,6 +28,9 @@
   .container {
     max-width: 1140px;
   }
+}
+.float > * {
+  float: left;
 }
 .clearFix:before,
 .clearFix:after {
@@ -216,6 +222,12 @@ a:active {
 a:hover {
   color: #5690ee;
 }
+select {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  outline: none;
+}
 p,
 label,
 td,
@@ -224,6 +236,8 @@ span {
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  line-height: 1.1em;
+  font-size: 14px;
 }
 h1,
 h2,
@@ -234,9 +248,6 @@ h6 {
   color: black;
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
-}
-.headermargin {
-  margin: 10px 0 10px 0px;
 }
 @media screen and (max-width: 767px) {
   header .container {
@@ -249,6 +260,7 @@ header .container h1 a {
 }
 header .container a {
   font-family: 'Montserrat', sans-serif;
+  line-height: 1.3em;
 }
 header section {
   font-size: 20px;
@@ -274,8 +286,11 @@ header section.smallMenu {
   display: none;
 }
 header section.smallMenu a {
-  margin: 10px 0 10px 30px;
+  margin: 10px 0 10px 0px;
   text-decoration: none;
+}
+header section.smallMenu ul {
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 767px) {
   header section.smallMenu ul {
@@ -285,7 +300,13 @@ header section.smallMenu a {
 header section.hamburger {
   cursor: pointer;
   display: none;
+  position: relative;
+  height: 20px;
   margin: 10px 0 10px 0px;
+}
+header section.hamburger span {
+  position: absolute;
+  right: 0;
 }
 @media screen and (max-width: 767px) {
   header section.hamburger {
@@ -418,6 +439,9 @@ main.butiker iframe {
 main.prodinfo article.flex-container {
   display: block;
 }
+main.prodinfo article.flex-container p {
+  line-height: 1.4em;
+}
 @media (min-width: 991px) {
   main.prodinfo article.flex-container {
     display: flex;
@@ -458,6 +482,9 @@ main.prodinfo article.flex-container section.right form .formfloat {
 main.prodinfo article.flex-container section.right form .formfloat label {
   width: 100%;
 }
+main.prodinfo article.flex-container section.right form .formfloat label input {
+  margin-right: 5px;
+}
 main.prodinfo article.flex-container section.right form.clear {
   content: "";
   display: table;
@@ -479,7 +506,8 @@ main.prodinfo article .table section p {
 main.prodinfo article .tdspacing {
   margin-left: 10px;
   padding: 3px 10px 5px 3px;
-  font-weight: bold;
+  font-weight: 500;
+  line-height: 1.1;
 }
 main.prodinfo article .td {
   margin-left: 10px;
@@ -503,7 +531,7 @@ main.prodinfo .addtocart span {
   color: white;
 }
 main.prodinfo .lower {
-  border: 1px solid #000;
+  border: 1px solid #000000;
   background-color: lightgrey;
   width: 100%;
 }
@@ -565,6 +593,7 @@ main.prodinfo tr:nth-child(odd) {
 h1.contact-rubrik {
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 .employees-container:before,
 .employees-container:after {
@@ -585,8 +614,36 @@ h1.contact-rubrik {
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+.employees-container .employee img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 80%;
+}
 .employees-container .employee .employee-body {
   padding-top: 20px;
+}
+.employees-container .employee .employee-body h2 {
+  margin-bottom: 7px;
+}
+.employees-container .employee .employee-body p {
+  font-size: 14px;
+  width: 90%;
+  margin: auto;
+}
+.employees-container .employee .employee-body i {
+  font-size: 14px;
+  text-align: left;
+}
+.employees-container .employee .employee-body ul {
+  margin-top: 10px;
+}
+.employees-container .employee .employee-body a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+.employees-container .employee .employee-body span {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 3px;
 }
 @media screen and (max-width: 991px) {
   .employees-container .employee {
@@ -597,11 +654,6 @@ h1.contact-rubrik {
   .employees-container .employee {
     width: 100%;
     height: auto;
-    -webkit-column-count: 2;
-    /* Chrome, Safari, Opera */
-    -moz-column-count: 2;
-    /* Firefox */
-    column-count: 2;
   }
 }
 .contact-container {
@@ -619,6 +671,11 @@ h1.contact-rubrik {
   .contact-container {
     padding-left: 10px;
   }
+}
+.contact-container ul li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
 }
 .contact-container .contact-text {
   float: left;
@@ -661,7 +718,7 @@ html {
 html body {
   margin-bottom: 550px;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 767px) {
   html body {
     margin-bottom: 350px;
   }
@@ -678,7 +735,7 @@ html body footer {
   padding: 15px;
   height: 500px;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 767px) {
   html body footer {
     height: 300px;
   }
@@ -687,9 +744,6 @@ html body footer {
   html body footer {
     height: 180px;
   }
-}
-.float > * {
-  float: left;
 }
 footer {
   color: white;
@@ -712,7 +766,11 @@ footer section.footer-container div.footer-block {
 }
 footer section.footer-container div.footer-block div.footer-text {
   display: inline-block;
-  text-align: left;
+}
+@media screen and (min-width: 767px) {
+  footer section.footer-container div.footer-block div.footer-text {
+    text-align: left;
+  }
 }
 footer section.footer-container div.footer-block div.footer-text h3 {
   color: white;
@@ -744,7 +802,7 @@ footer section.footer-container div.footer-block div.footer-text li {
   list-style-type: none;
   float: left;
 }
-footer section.footer-container div.footer-block div.footer-text li:not(footer section.footer-container div.footer-block div.footer-text li:last-child) {
+footer section.footer-container div.footer-block div.footer-text li:not(&:last-child) {
   margin: left;
 }
 footer section.footer-container div.footer-block div.footer-text li:last-child a {

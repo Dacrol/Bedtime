@@ -1,8 +1,3 @@
-//main: style.less
-.float>* {
-    float: left;
-}
-
 footer {
     color: white;
     background-color: @blue;
@@ -23,7 +18,9 @@ footer {
 
             div.footer-text {
                 display: inline-block;
-                text-align: left;
+                @media screen and (min-width: @sm) {
+                    text-align: left;
+                }
 
                 h3 {
                     color: white;
